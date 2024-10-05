@@ -1,0 +1,59 @@
+.inverted {
+	.button-link {
+		color: #fff;
+	}
+	.logo-copy {
+		color:#fff;
+	}
+	.logo-image {
+		&.alt {
+			display: inline !important;
+		}
+		&.regular {
+			display: none !important;
+		}
+	}
+}
+
+.app-header, .swap-header {
+	border-bottom: 1px solid #dadada;
+	min-height: 65px;
+	.logo-image {
+		height:30px;
+		margin-right: 15px;
+		&.alt {
+			display: none;
+		}
+	}
+	.logo-copy {
+		font-size:22px;
+		font-weight: 700;
+		letter-spacing: -1px;
+		margin-left:0;
+		font-family: "Poppins", "Helvetica", sans-serif;
+		text-transform: uppercase;
+		a {
+			color:inherit
+		}
+	}
+	.menu {
+		a {
+			font-weight: 500 !important;
+			color:#333;
+			font-size: 1rem;
+			&.Mui-selected {
+				font-weight: 600 !important;
+			}
+		}
+	}
+	.user-menu {
+
+		.button-link {
+			font-size:14px;
+			&.active {
+				color:#3f51b5;
+				background:rgba(63,81,181,0.1);
+			}
+		}
+	}
+}

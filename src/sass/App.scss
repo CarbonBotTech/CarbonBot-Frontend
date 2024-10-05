@@ -1,0 +1,90 @@
+html, body {
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	overflow-x: hidden;
+	//background: #fff !important;
+}
+
+.wrapper {
+	min-height:calc(100% - 65px);
+	max-height:calc(100% - 65px);
+	.content {
+		height: 100%;
+		-webkit-overflow-scrolling: touch;
+		overflow-y: auto;
+		min-width:calc(100% - 300px);
+	}
+}
+
+.horizontal-wrapper {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.inline-dropzone {
+	display: inline-block
+}
+
+.poster  {
+	height:250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 6px;
+}
+
+/* Typography */
+
+a {
+	color:#3f51b5;
+	text-decoration: none;
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+button {
+	cursor:pointer;
+}
+button:disabled,
+button[disabled]{
+	cursor: wait;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+@media (min-width: 576px) {
+	.text-md-left {
+    	text-align: left !important;
+  	}
+  	.text-md-right {
+    	text-align: right !important;
+  	}
+  	.text-md-center {
+    	text-align: center !important;
+  	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.loading {
+	opacity: 0.6;
+}
+
+/*
+@media (min-width: 1200px) { 
+
+}
+@media (max-width: 767px) { 
+
+}
+*/

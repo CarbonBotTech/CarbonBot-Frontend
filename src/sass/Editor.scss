@@ -1,0 +1,74 @@
+.note-editor-header, .note-editor-footer {
+	max-width: 750px;
+	margin:0 auto;
+}
+.note-editor-form {
+	max-width: 750px;
+	margin:0 auto;
+}
+
+.note-editor {
+
+	.codex-editor__redactor {
+		padding-bottom: 0 !important;
+	}
+	.codex-editor__redactor {
+		max-width:750px;
+		margin: 0 auto;
+		border:1px solid #c4c4c4;
+		border-radius: 6px;
+		overflow: hidden;
+		min-height: 200px;
+		cursor: text;
+		&:hover {
+			border:1px solid #212121;
+		}
+		.ce-block {
+			.ce-block__content {
+				max-width:750px;
+				padding:5px 10px 5px 10px;
+				background: #fff;
+				//border:1px solid red;
+				.ce-header {
+					padding-top:7px;
+					padding-bottom:20px;
+
+				}
+				.cdx-block {
+					&::before {
+						cursor: text;
+					}
+				}
+			}
+			&.ce-block--selected {
+				.ce-block__content {
+					background:#f9f9f9;
+				}
+			}
+			&.ce-block--focused {
+				.ce-block__content {
+					background:#f5f5f5;
+				}
+			}
+		}
+	}
+	.ce-toolbar__content {
+		max-width:750px;
+		.ce-toolbar__settings-btn {
+			background: transparent;
+			margin-top:7px;
+			svg {
+				width:12px;
+				height:12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) { 
+	.ce-toolbar__content {
+		.ce-toolbar__settings-btn {
+			margin-top:0px !important;
+		}
+	}
+}
